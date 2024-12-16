@@ -1,5 +1,5 @@
 # Use a specific version of the Postgres image
-FROM postgres:15.8
+#FROM postgres:15.8
 
 # Define build arguments and set labels
 ARG SOURCE
@@ -12,7 +12,7 @@ LABEL commit_id=${COMMIT_ID}
 LABEL build_time=${BUILD_TIME}
 
 # Install required packages and clean up to reduce image size
-RUN apt-get update && \
+#RUN apt-get update && \
     apt-get install -y --no-install-recommends \
         apt-utils \
         gcc \
